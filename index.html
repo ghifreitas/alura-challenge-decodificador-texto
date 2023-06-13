@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Folha de estilo de CSS Linkado -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonte do Projeto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+    <title>Portifólio Pessoal</title>
+</head>
+<body>
+    <img id="logo" src="assets/Vectorlogo.png" />
+
+    <main>
+        <section id="interactivity">
+            <div id="interactivity_content">
+                <textarea id="source-textarea" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div id="interactivity_footer">
+                <p>
+                    <img src="assets/Vectorwarning.png">
+                    Apenas letras minúsculas e sem acento.
+                </p>
+                <div>
+                    <button id="encode-button" class="main">Criptografar</button>
+                    <button id="decode-button" class="auxiliary">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="result">
+            <div id="no-word-div">
+                <img id="no-word-image" src="assets/no_word.svg" />
+                <div id="no-word-title">Nenhuma mensagem encontrada</div>
+                <div id="no-word-suggestion">Digite um texto que você deseja criptografar ou descriptografar.</div>
+
+            </div>
+            <div id="result-block">
+                <div id="result-div"></div>
+                <div id="copy-block">
+                    <button class="auxiliary">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Script Linkado do seu documento de JavaScript -->
+<script src="coder.js"></script>
+</body>
+</html>
+
